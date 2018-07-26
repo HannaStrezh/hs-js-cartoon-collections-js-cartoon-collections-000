@@ -1,20 +1,25 @@
-//1st ctreate a function named dwarves that accepts an array of names 
-//2st create a loop, to loop through the names array
-//3rd return string with names starting at number 1
-// starting at 0 as the first item in the array, go from left to //right
-//.length method to keep the loop dymamic, to keep the loop the 
-//accept any length of the array, keep increasing i(during the //length of the array)
+/*
+1st ctreate a function named dwarves that accepts an array of names 
+2st create a loop, to loop through the names array
+3rd return string with names starting at number 1
+ starting at 0 as the first item in the array, go from left to right
+.length method to keep the loop dymamic, 
+so it accepts any length of the array, keep increasing i(during the 
+length of the array)*/
+
 function dwarfRollCall(names){
-  var str = ""; // created epty string //so we could add items to it within //a loop
+  var str = ""; 
+  /* created epty string so we could add items to it within a loop*/
   for(let i=0; i<names.length; i++){
   // resetting the value of the string, using it's current value
   //(i+1) gives us number 1, insted of 0
   //adding 1 to the index
-  //names[i] acces the array to give us the name within the array.
+  //names[i] acces the array to give us the name of dwarf within the array.
    str = str + (i+1) +". " + names[i] +" "
   }
   return str;
 }
+
 function summonCaptainPlanet(planeteerCalls){
   for(let i=0;i<planeteerCalls.length;i++){
     planeteerCalls[i]
@@ -23,6 +28,7 @@ function summonCaptainPlanet(planeteerCalls){
   }
 return planeteerCalls;  
 }
+
 function longPlaneteerCalls(calls){
   for (let i=0;i<calls.length; i++){
     if(calls[i].length > 4){
@@ -31,10 +37,11 @@ function longPlaneteerCalls(calls){
   }
   return false
 }
-/*1stdefined function that accepts an array
+/*1st defined function that accepts an array
 2nd crreated the for loop so it can check for the condition
-3rd  if statement checks takes an array and checks it through the length and makes sure that it's bigger then 4
-4th it returns true if the condition is met, if not met it returns falls(the final return statement should be after the loop, so it can run the whole lenth of the array*/
+3rd  if statement takes an array and checks it through the length and makes sure that it's bigger than 4
+4th it returns true if the condition is met and the word is bigger than 4 letter, if not met it returns falls(the final return statement should be after the loop, so it can run the whole lenth of the array*/
+
 function findTheCheese(arrayOfStrings){
   for (let i=0; i<arrayOfStrings.length;i++){
     if(arrayOfStrings[i] === "cheddar"||
@@ -44,4 +51,4 @@ function findTheCheese(arrayOfStrings){
     }
   }
  return "no cheese!"
-}
+ }
