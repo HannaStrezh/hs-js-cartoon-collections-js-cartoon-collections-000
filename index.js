@@ -57,6 +57,6 @@ function findTheCheese(arrayOfStrings){
    for(i=0; i<words.length; i++){
      if(words[i][0])
      //will give the first characher of the words
-     return words[i]
+     return words[i];
    }
- }
+ }return [];
