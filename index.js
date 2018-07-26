@@ -47,7 +47,7 @@ function findTheCheese(arrayOfStrings){
     if(arrayOfStrings[i] === "cheddar"||
     arrayOfStrings[i]==="gouda"||
     arrayOfStrings[i] ==="camembert"||
-    arrayOfStrings[i] ==="swiss cheese" {
+    arrayOfStrings[i] ==="swiss cheese"){
       return arrayOfStrings[i]
     }
   }
