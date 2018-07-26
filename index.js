@@ -53,10 +53,15 @@ function findTheCheese(arrayOfStrings){
   }
  return "no cheese!"
  }
+ 
  function workWithB(words){
+   var newArray = [];
    for(i=0; i<words.length; i++){
-     if(words[i][0])
+     if((words[i][0])=="B"){
+       newArray.push(words[i])
+     }
      //will give the first characher of the words
-     return words[i];
+    // return words[i];
+    
    }
- }return [];
+return newArray;}
