@@ -10,7 +10,7 @@ length of the array)*/
 function dwarfRollCall(names){
   var str = ""; 
   /* created epty string so we could add items to it within a loop*/
-  for(let i=0; i<names.length; i++){
+  for(let i=names.length/2; i<names.length; i++){
   // resetting the value of the string, using it's current value
   //(i+1) gives us number 1, insted of 0
   //adding 1 to the index
